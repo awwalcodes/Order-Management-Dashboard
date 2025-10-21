@@ -813,3 +813,63 @@ table {
 
 
 }
+
+
+@media (max-width: 1140px) {
+
+    body {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    
+
+    .metrics-updates {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .update-cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 2rem;
+    }
+
+    .metrics {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .metric-card{
+        width: 100%;
+    }
+
+    .longcard-metrics{
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .category {
+        width: 45%;
+
+        
+    }
+
+    .updates {
+        width: 100%;
+    }
+
+     .table-scroll-wrapper {
+        width: 100%;
+        overflow-x: auto;
+        
+    }
+
+
+}

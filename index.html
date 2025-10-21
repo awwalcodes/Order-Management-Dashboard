@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Management</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet" />
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <aside class="nav">
+        <div class="logo">
+            <img src="asset/logo.png" alt="Direction Logo">
+        </div>
+
+        <div class="nav-links">
+
+            <!-- Search bar -->
+            <div class="search-box">
+            <span class="material-symbols-rounded">search</span>
+            <input type="text" placeholder="Search in Dashboard">
+            </div>
+
+            <!-- Favourites -->
+            <h4 class="nav-section">Favourite links</h4>
+            <a href="#"><span class="material-symbols-rounded">star</span> Dashboard</a>
+
+            <!-- Task Manager -->
+            <h4 class="nav-section">Task Manager</h4>
+            <a href="#"><span class="material-symbols-rounded">check_circle</span> Tasks</a>
+            <a href="#"><span class="material-symbols-rounded">calendar_month</span> Calendar</a>
+            <a href="#"><span class="material-symbols-rounded">description</span> Documents</a>
+
+            <!-- Project Management -->
+            <h4 class="nav-section">Project Management</h4>
+            <a href="#"><span class="material-symbols-rounded">lightbulb</span> Opportunities</a>
+            <a href="#" ><span class="material-symbols-rounded">folder</span> Projects</a>
+            <a href="#" class="active"><span class="material-symbols-rounded">inventory_2</span> My Orders</a>
+            <a href="#"><span class="material-symbols-rounded">local_shipping</span> Shipments</a>
+
+            <!-- Messages -->
+            <h4 class="nav-section">Messages</h4>
+            <a href="#"><span class="material-symbols-rounded">mail</span> Messages</a>
+
+            <!-- Quality Audit -->
+            <h4 class="nav-section">Quality Audit</h4>
+            <a href="#"><span class="material-symbols-rounded">verified</span> Quality Audit <span class="pro-badge">PRO</span></a>
+
+           
+
+        </div>
+    </aside>
+
+        
+    
+    <!-- Main -->
+
+    <main>
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <img src="asset/logo.png" alt="">
+            </div>
+
+            <h1>My Orders</h1>
+            
+            
+
+            <div class="user">
+                <img src="asset/user4.png" alt="">
+                <p>John Doe</p>
+                <span class="material-symbols-rounded">stat_minus_1</span>
+            </div>
+            
+            
+        </header>
+
+        <!-- Mobile Navigation -->
+        <div class="mobile-nav">
+            <!-- Checkbox toggle (hidden) -->
+            <input type="checkbox" id="sidebar-active">
+
+            <!-- Header toggle button -->
+            <label for="sidebar-active" class="open-sidebar" aria-hidden="false">
+                <span class="material-symbols-rounded">menu</span>
+            </label>
+
+            <!-- Sidebar links -->
+            <div class="links-container">
+                <label for="sidebar-active" class="close-sidebar">
+                <span class="material-symbols-rounded">close</span>
+                </label>
+
+                <!-- Search bar -->
+                <div class="search-box">
+                <span class="material-symbols-rounded">search</span>
+                <input type="text" placeholder="Search in Dashboard">
+                </div>
+
+                <!-- Favourites -->
+                <h4 class="nav-section">Favourite links</h4>
+                <a href="#"><span class="material-symbols-rounded">star</span> Dashboard</a>
+
+                <!-- Task Manager -->
+                <h4 class="nav-section">Task Manager</h4>
+                <a href="#"><span class="material-symbols-rounded">check_circle</span> Tasks</a>
+                <a href="#"><span class="material-symbols-rounded">calendar_month</span> Calendar</a>
+                <a href="#"><span class="material-symbols-rounded">description</span> Documents</a>
+
+                <!-- Project Management -->
+                <h4 class="nav-section">Project Management</h4>
+                <a href="#"><span class="material-symbols-rounded">lightbulb</span> Opportunities</a>
+                <a href="#" ><span class="material-symbols-rounded">folder</span> Projects</a>
+                <a href="#" class="active"><span class="material-symbols-rounded">inventory_2</span> My Orders</a>
+                <a href="#"><span class="material-symbols-rounded">local_shipping</span> Shipments</a>
+
+                <!-- Messages -->
+                <h4 class="nav-section">Messages</h4>
+                <a href="#"><span class="material-symbols-rounded">mail</span> Messages</a>
+
+                <!-- Quality Audit -->
+                <h4 class="nav-section">Quality Audit</h4>
+                <a href="#"><span class="material-symbols-rounded">verified</span> Quality Audit <span class="pro-badge">PRO</span></a>
+            </div>
+        </div>
+
+        <div class="order-intro">
+            <h3>
+                Order Overview
+            </h3>
+
+            <button class="btn-fill">
+                This month <span class="material-symbols-rounded">stat_minus_1</span>
+            </button>
+        </div>
+
+        <div class="metrics-updates">
+            <div class="metrics">
+                <div class="metric-column">
+                    <!-- First card -->
+                    <div class="metric-card">
+                        <div class="card-icon">
+                            <span class="material-symbols-rounded">
+                                moped_package
+                            </span>
+                        </div>
+
+                        <div class="card-data">
+                            <p class="card-title">Total order</p>
+                            <h5>453</h5>
+                            <p class="caption"><span class="material-symbols-rounded">
+                            arrow_drop_up
+                            </span>12% more than avg</p>
+                        </div>
+                    </div>
+
+                    <!-- Second-card -->
+
+                    <div class="metric-card">
+                        <div class="card-icon">
+                            <span class="material-symbols-rounded">
+                            package_2
+                            </span>
+                        </div>
+
+                        <div class="card-data">
+                            <p class="card-title">Processed order</p>
+                            <h5>453</h5>
+                            <p class="caption red"><span class="material-symbols-rounded">
+                            arrow_drop_down
+                            </span>12% less than avg</p>
+                        </div>
+                    </div>
+
+                    <!-- Third card -->
+
+                    <div class="metric-card">
+                        <div class="card-icon">
+                            <span class="material-symbols-rounded">
+                            hand_package
+                            </span>
+                        </div>
+
+                        <div class="card-data">
+                            <p class="card-title">Recieved order</p>
+                            <h5>453</h5>
+                            <p class="caption red"><span class="material-symbols-rounded">
+                            arrow_drop_down
+                            </span>12% more than avg</p>
+                        </div>
+                    </div>
+
+                    <!-- Fourth card -->
+
+                    <div class="metric-card">
+                        <div class="card-icon">
+                            <span class="material-symbols-rounded">
+                            deployed_code_alert
+                            </span>
+                        </div>
+
+                        <div class="card-data">
+                            <p class="card-title">Delayed order</p>
+                            <h5>453</h5>
+                            <p class="caption"><span class="material-symbols-rounded">
+                            arrow_drop_up
+                            </span>12% more than avg</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="long-card">
+                    <div class="longcard-text">
+                        <h5>
+                            Production
+                        </h5>
+                    </div>
+
+                    <div class="longcard-metrics">
+                        <!-- One -->
+                        <div class="category">
+                            <hr>
+                            <p class="card-title">
+                                Pre-production
+                            </p>
+                            <h6>
+                                12
+                            </h6>
+                        </div>
+
+                        <!-- Two -->
+
+                        <div class="category green">
+                            <hr>
+                            <p class="card-title">
+                                Pre-production
+                            </p>
+                            <h6>
+                                21
+                            </h6>
+                        </div>
+
+                        <!-- Three -->
+
+                        <div class="category purple">
+                            <hr>
+                            <p class="card-title">
+                                Pre-production
+                            </p>
+                            <h6>
+                                162
+                            </h6>
+                        </div>
+
+                        <!-- Four -->
+
+                        <div class="category blue">
+                            <hr>
+                            <p class="card-title">
+                                Pre-production
+                            </p>
+                            <h6>
+                                1232
+                            </h6>
+                            </div>
+                    </div>
+                   
+                    
+                </div>
+            </div>
+
+            <!-- Updates -->
+
+            <div class="updates">
+                <div class="title">
+                    <h5 class="title">
+                        Recent updates
+                    </h5>
+                </div>
+
+                <div class="update-cards">
+
+                    <!-- First -->
+
+                    <div class="card first">
+                        <div class="title-icon">
+                            <div class="icon">
+                                <span class="material-symbols-rounded">
+                                package_2
+                                </span>
+                            </div>
+
+                            <div class="line">
+
+                            </div>
+                        </div>
+
+                        <div class="content">
+                            <div class="content-title">
+                                <h3>
+                                    Order No 123 - DP Headlight 50W DP-7229
+                                </h3>
+                                <p>Shipping process completed</p>
+                                <div class="order-date">
+                                    <p> <span class="material-symbols-rounded">
+                                    orders
+                                    </span>Order 123</p>
+
+                                    <div class="line">
+
+                                    </div>
+
+                                    <p class="date">10:17am, 21/10/2025</p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <!-- Second card -->
+
+                    <div class="card second">
+                        <div class="title-icon">
+                            <div class="icon purple-color">
+                                <span class="material-symbols-rounded">
+                                box_add
+                                </span>
+                            </div>
+
+                            <div class="line">
+
+                            </div>
+                        </div>
+
+                        <div class="content">
+                            <div class="content-title">
+                                <h3>
+                                    Order No 123 - DP Headlight 50W DP-7229
+                                </h3>
+                                <p>Shipping process completed</p>
+                                <div class="order-date">
+                                    <p> <span class="material-symbols-rounded">
+                                    orders
+                                    </span>Order 123</p>
+
+                                    <div class="line">
+
+                                    </div>
+
+                                    <p class="date">10:17am, 21/10/2025</p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <!-- Third card -->
+
+                    <div class="card first">
+                        <div class="title-icon">
+                            <div class="icon">
+                                <span class="material-symbols-rounded">
+                                redeem
+                                </span>
+                            </div>
+
+                            <div class="line">
+
+                            </div>
+                        </div>
+
+                        <div class="content">
+                            <div class="content-title">
+                                <h3>
+                                    Order No 123 - DP Headlight 50W DP-7229
+                                </h3>
+                                <p>Shipping process completed</p>
+                                <div class="order-date">
+                                    <p> <span class="material-symbols-rounded">
+                                    orders
+                                    </span>Order 123</p>
+
+                                    <div class="line">
+
+                                    </div>
+
+                                    <p class="date">10:17am, 21/10/2025</p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <!-- Fourth -->
+
+                    <div class="card fourth">
+                        <div class="title-icon">
+                            <div class="icon red-color">
+                                <span class="material-symbols-rounded">
+                                deployed_code_alert
+                                </span>
+                            </div>
+
+                            <div class="line">
+
+                            </div>
+                        </div>
+
+                        <div class="content">
+                            <div class="content-title">
+                                <h3>
+                                    Order No 123 - Order not dilivered
+                                </h3>
+                                <p>Shipping process completed</p>
+                                <div class="order-date">
+                                    <p> <span class="material-symbols-rounded">
+                                    orders
+                                    </span>Order 123</p>
+
+                                    <div class="line">
+
+                                    </div>
+
+                                    <p class="date">10:17am, 21/10/2025</p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <!-- Fifth -->
+
+                    <div class="card first">
+                        <div class="title-icon">
+                            <div class="icon">
+                                <span class="material-symbols-rounded">
+                                package_2
+                                </span>
+                            </div>
+
+                            <div class="line">
+
+                            </div>
+                        </div>
+
+                        <div class="content">
+                            <div class="content-title">
+                                <h3>
+                                    Order No 123 - DP Headlight 50W DP-7229
+                                </h3>
+                                <p>Shipping process completed</p>
+                                <div class="order-date">
+                                    <p> <span class="material-symbols-rounded">
+                                    orders
+                                    </span>Order 123</p>
+
+                                    <div class="line">
+
+                                    </div>
+
+                                    <p class="date">10:17am, 21/10/2025</p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                </div>
+                
+            </div>
+        </div>
+
+        <!-- Table section -->
+
+        <div class="table-section">
+
+            <!-- Table-intro -->
+            <div class="table-intro">
+                <h3>
+                  Recent order
+                </h3>
+
+                <button class="btn-fill">
+                  Show orders<span class="material-symbols-rounded">stat_minus_1</span>
+                </button>
+            </div>
+
+            <!-- Table-data -->
+
+            <div class="table-scroll-wrapper">
+                <table class="dashboard-table">
+                    <thead>
+                        <tr>
+                            <th>Order ID</th>
+                            <th>Order Name</th>
+                            <th>Last Updated</th>
+                            <th>Pieces</th>
+                            <th>Category</th>
+                            <th>Status</th>
+                            <th>Shared With</th>
+                            <th>Exp. Dispatch</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tbody>
+                            <td>1459</td>
+                            <td>TSS Summer Shirts</td>
+                            <td>Today, 12:43 <span class="new-update">1 new update</span></td>
+                            <td>1,500</td>
+                            <td>Tshirts</td>
+                            <td><span class="status pre-shipment">Pre-shipment</span></td>
+                            <td class="avatars">
+                                <img src="asset/user1.png" alt="">
+                                <img src="asset/user2.png" alt="">
+                            </td>
+
+                            <td>24 Sep 25</td>
+                        </tr>  
+
+                        <tr>
+                            <td>1468</td>
+                            <td>Corporate Suits</td>
+                            <td>16 Oct 23</td>
+                            <td>2,400</td>
+                            <td>Suits</td>
+                            <td><span class="status pre-shipment">Pre-shipment</span></td>
+                            <td class="avatars">
+                            <img src="asset/user5.png" alt="">
+                            <img src="asset/user6.png" alt="">
+                            </td>
+                            <td>11 Feb 24</td>
+                        </tr>
+
+                        <tr>
+                            <td>1459</td>
+                            <td>TSS Summer Shirts</td>
+                            <td>Today, 12:43 <span class="new-update">1 new update</span></td>
+                            <td>1,500</td>
+                            <td>Tshirts</td>
+                            <td><span class="status production">Production</span></td>
+                            <td class="avatars">
+                            <img src="asset/user1.png" alt="">
+                            <img src="asset/user2.png" alt="">
+                            </td>
+                            <td>24 Sep 23</td>
+                        </tr>
+
+                        <tr>
+                            <td>1423</td>
+                            <td>Roadster Jeans</td>
+                            <td>24 Jul 23</td>
+                            <td>12,560</td>
+                            <td>Trousers</td>
+                            <td><span class="status shipment">Shipment</span></td>
+                            <td class="avatars">
+                            <img src="asset/user3.png" alt="">
+                            <img src="asset/user4.png" alt="">
+                            </td>
+                            <td>23 Oct 23</td>
+                        </tr>
+
+                        <tr>
+                            <td>1458</td>
+                            <td>Pepe Jeans Blue Denim</td>
+                            <td>14 Aug 23 <span class="new-update danger">1 new message</span></td>
+                            <td>4,500</td>
+                            <td>Jeans</td>
+                            <td><span class="status shipment">Shipment</span></td>
+                            <td class="avatars">
+                            <img src="asset/user5.png" alt="">
+                            <img src="asset/user6.png" alt="">
+                            </td>
+                            <td>27 Dec 23</td>
+                        </tr>
+
+
+                    </tbody>    
+
+                </table>    
+
+            </div>
+        </div>
+
+        
+
+    </main>
+
+    
+</body>
+</html>
